@@ -10,12 +10,12 @@ app.use("/api", userRoutes);
 
 app.get("/", (req, res) => {
     res.json({
-        message: "API funcionando!"
+        message: "API funcionando! Acesse um endpoint a qualquer momento."
     });
 });
 
-const PORT = 3000;
+const PORT = 4000;
 
 app.listen(PORT, () => {
-    console.log("Servidor iniciado");
+    console.log(`Servidor iniciado com sucesso`);
 });
